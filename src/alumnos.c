@@ -25,12 +25,20 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
+/**
+ * @brief Constante que almacena los datos del alumno ESTEBAN VOLENTINI
+ * 
+ */
 static const struct alumno_s ESTEBAN_VOLENTINI = {
     .apellidos = "VOLENTINI",
     .nombres = "Esteban Daniel",
     .documento = "23.517.968",
 };
 
+/**
+ * @brief Constante que almacena los datos del alumno GUILLERMO CASTIGLIONI
+ * 
+ */
 static const struct alumno_s GUILLERMO_CASTIGLIONI = {
     .apellidos = "CASTIGLIONI",
     .nombres = "Guillermo Luis",

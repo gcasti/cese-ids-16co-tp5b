@@ -29,6 +29,7 @@ extern "C" {
 
 /*=====[Definitions of public data types]====================================*/
 
+//! Tipo de datos para almacenar los datos de un alumno
 typedef struct alumno_s {
     char apellidos[30];
     char nombres[30];
@@ -38,9 +39,25 @@ typedef struct alumno_s {
 /*=====[Definitions of public global variables]==============================*/
 
 /*=====[Prototypes (declarations) of public functions]=======================*/
-
+/**
+ * @brief Función que almacena de forma serial los datos de la estructura alumno  
+ * 
+ * @param[out] cadena   puntero al string que se utiliza para imprimir el resultado   
+ * @param[in] espacio   cantida máxima-1 de caracteres a imprimir
+ * @param[in] alumno    puntero a estructura de datos a serializar
+ * @return true         
+ * @return false 
+ */
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
 
+/**
+ * @brief Función que serializa una determinada cantidad de alumnos almacenados
+ * 
+ * @param[out] cadena puntero al string que se utiliza para imprimir el resultado 
+ * @param[in] espacio cantida máxima-1 de caracteres a imprimir por alumno
+ * @return true 
+ * @return false 
+ */
 bool SerializarAlumnos(char * cadena, size_t espacio);
 
 /*=====[Prototypes (declarations) of public interrupt functions]=============*/
